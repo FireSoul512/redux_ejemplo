@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 import 'package:redux/redux.dart';
+import 'package:redux_ejemplo/src/page1.dart';
 
 // One simple action: Increment
 enum Actions { Increment }
@@ -44,6 +45,8 @@ class FlutterReduxApp extends StatelessWidget {
       child: MaterialApp(
         theme: ThemeData.dark(),
         title: title,
+        home: Page1()
+        /*
         home: Scaffold(
           appBar: AppBar(
             title: Text(title),
@@ -99,6 +102,7 @@ class FlutterReduxApp extends StatelessWidget {
             },
           ),
         ),
+        */
       ),
     );
   }
