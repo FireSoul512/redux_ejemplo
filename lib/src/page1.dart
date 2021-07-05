@@ -34,7 +34,7 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Redux Items'),
+        title: Text('Lista con redux'),
       ),
       body: StoreConnector<AppState, _ViewModel>(
         converter: (Store<AppState> store) => _ViewModel.create(store),
@@ -58,7 +58,7 @@ class RemoveItemsButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return RaisedButton(
-      child: Text('Delete all Items'),
+      child: Text('Borrar todo'),
       onPressed: () => model.onRemoveItems(),
     );
   }
@@ -102,7 +102,7 @@ class _AddItemState extends State<AddItemWidget> {
     return TextField(
       controller: controller,
       decoration: InputDecoration(
-        hintText: 'add an Item',
+        hintText: 'Agregar texto',
       ),
       onSubmitted: (String s) {
         widget.model.onAddItem(s);

@@ -1,4 +1,4 @@
-package com.example.redux_ejemplo
+package com.sinsdevs.redux_ejemplo
 
 import io.flutter.embedding.android.FlutterActivity
 
